@@ -21,31 +21,105 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
-					<ul class="cards">
-						<li id="card-1" class="card card-md">
-							<div class="card-body">
-									1
+					<div class="box-container">
+						<div class="panel panel-default">
+							<div class="panel-heading text-right">
+								<i class="fa fa-chevron-circle-down"></i>
 							</div>
-						</li>
-						<li id="card-2" class="card card-md">
-							<div class="card-body">
-									2
-							</div>
-						</li>
-						<li id="card-3" class="card card-md">
-							<div class="card-body">
-									3
-							</div>
-						</li>
-						<li id="card-4" class="card card-md">
-							<div class="card-body">
-									4
-							</div>
-						</li>
-					</ul>
+							<div class="panel-body padding-none">
+								<div class="user-container">
+									<div class="pull-left">
+										<div class="user-img">
+											<img src="img/avatars/5.png" class="img-circle">
+										</div>
+										<div class="user-offline"></div>
+									</div>
+									<div class="user-info">
+										<div class="user-meta">
+											<span><strong>Kerem Suer</strong></span>
+											<p class="text-muted">Hey man what's wrong with th...</p>
+										</div>
+									</div>
+								</div>
 
+								<div class="user-container">
+									<div class="pull-left">
+										<div class="user-img">
+											<img src="img/avatars/4.png" class="img-circle">
+										</div>
+										<div class="user-online"></div>
+									</div>
+									<div class="user-info">
+										<div class="user-meta">
+											<span><strong>Bills Keney</strong></span>
+											<p class="text-muted">You need to change two thins for five...</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="user-container">
+									<div class="pull-left">
+										<div class="user-img">
+											<img src="img/avatars/3.png" class="img-circle">
+										</div>
+										<div class=""></div>
+									</div>
+									<div class="user-info">
+										<div class="user-meta">
+											<span><strong>Oykun Yilmaz</strong></span>
+											<p class="text-muted">Active one commando upgrade...</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="user-container">
+									<div class="pull-left">
+										<div class="user-img">
+											<img src="img/avatars/2.png" class="img-circle">
+										</div>
+										<div class="user-busy"></div>
+									</div>
+									<div class="user-info">
+										<div class="user-meta">
+											<span><strong>Rogie King</strong></span>
+											<p class="text-muted">It's like nobody have nothing to...</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="user-container">
+									<div class="pull-left">
+										<div class="user-img">
+											<img src="img/avatars/1.png" class="img-circle">
+										</div>
+										<div class="user-online"></div>
+									</div>
+									<div class="user-info">
+										<div class="user-meta">
+											<span><strong>Vicky Erixon</strong></span>
+											<p class="text-muted">Hey there, wanna play some...</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="user-container">
+									<div class="pull-left">
+										<div class="user-img">
+											<img src="img/avatars/sunny.png" class="img-circle">
+										</div>
+										<div class="user-online"></div>
+									</div>
+									<div class="user-info">
+										<div class="user-meta">
+											<span><strong>Fabio Basil</strong></span>
+											<p class="text-muted">It's seems we need to discuss...</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-
 			</div>
 		</div>
 
@@ -59,25 +133,6 @@
 		
 		<script src="js/bootstrap/bootstrap.min.js"></script>
 
-		<script>
-
-            // A $( document ).ready() block.
-            $( document ).ready(function() {
-                var defCard = jQuery('ul.cards li.card');
-
-                defCard.addClass('card-inactive');
-
-                $(defCard).on('click', function() {
-                    console.log('clicked')
-                    //e.preventDefault()
-
-                    $( this ).siblings().removeClass( 'card-active' );
-                    $( this ).toggleClass( 'card-active' );
-                });
-
-            });
-
-		</script>
 	</body>
 
 </html>

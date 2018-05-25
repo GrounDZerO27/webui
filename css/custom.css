@@ -65,3 +65,26 @@
     top: -15px;
     left: 35px;
 }
+
+.cards {
+    display: inline-flex;
+}
+
+.cards li {
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.card-md {
+    height: 150px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.card-inactive {
+    background-color: #ab0600;
+}
+
+.card-active {
+    background-color: #47ab58;
+}

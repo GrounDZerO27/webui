@@ -1,0 +1,90 @@
+.box-container {
+    max-height: 1000px;
+    max-width: 400px;
+}
+
+.padding-none {
+    padding: 0px;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #313b44;
+    border-color: #ddd;
+}
+
+.user-container {
+     width: 100%;
+     padding: 15px 10px 15px 10px;
+     border-top: 1px solid #ddd;
+     background-color: #e9eff1;
+     cursor: pointer;
+ }
+
+.user-container:hover {
+    background-color: #fff;
+}
+
+.user-meta {
+    padding-top: 5px;
+}
+
+.user-info {
+    padding: 0px 15px 5px 75px;
+}
+
+.user-container .user-offline {
+    height: 15px;
+    width: 15px;
+    background-color: #e9597e;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+    position: relative;
+    top: -15px;
+    left: 35px;
+}
+
+.user-container .user-online {
+    height: 15px;
+    width: 15px;
+    background-color: #33c555;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+    position: relative;
+    top: -15px;
+    left: 35px;
+}
+
+.user-container .user-busy {
+    height: 15px;
+    width: 15px;
+    background-color: #f49d00;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+    position: relative;
+    top: -15px;
+    left: 35px;
+}
+
+.cards {
+    display: inline-flex;
+}
+
+.cards li {
+    margin-left:5px;
+    margin-right:5px;
+}
+
+.card-md {
+    height: 150px;
+    width: 250px;
+    cursor: pointer;
+}
+
+.card-inactive {
+    background-color: #ab0600;
+}
+
+.card-active {
+    background-color: #47ab58;
+}

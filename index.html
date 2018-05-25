@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<title> WEB UI </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+			
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- #CSS Links -->
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/custom.css">
+	</head>
+	
+	<body class="">
+	<div class=""><br><br>
+	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="cards">
+						<li id="card-1" class="card card-md">
+							<div class="card-body">
+									1
+							</div>
+						</li>
+						<li id="card-2" class="card card-md">
+							<div class="card-body">
+									2
+							</div>
+						</li>
+						<li id="card-3" class="card card-md">
+							<div class="card-body">
+									3
+							</div>
+						</li>
+						<li id="card-4" class="card card-md">
+							<div class="card-body">
+									4
+							</div>
+						</li>
+					</ul>
+
+				</div>
+
+			</div>
+		</div>
+
+
+		<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+		Note: These tiles are completely responsive,
+		you can add as many as you like
+		-->
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+
+		<script>
+
+            // A $( document ).ready() block.
+            $( document ).ready(function() {
+                var defCard = jQuery('ul.cards li.card');
+
+                defCard.addClass('card-inactive');
+
+                $(defCard).on('click', function() {
+                    console.log('clicked')
+                    //e.preventDefault()
+
+                    $( this ).siblings().removeClass( 'card-active' );
+                    $( this ).toggleClass( 'card-active' );
+                });
+
+            });
+
+		</script>
+	</body>
+
+</html>
